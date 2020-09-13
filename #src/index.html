@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="../bar/css/reset.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600;800&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Bar</title>
 </head>
@@ -56,22 +55,32 @@
                 </div>
             </header>
             <div class="container">
-                <div class="info__slider slider-info">
-                    <div class="slider__container">
-                        <div class="slider__item">
+                <div class="info__slider slider-info slider">
+                    <div class="slider__wrapper slider-container">
+                        <div class="slider__item slides">
                             <div class="info__price">
                                 <h1 class="info__title">Дизайн интерьеров</h1>
                                 <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
                                     будет
                                     радовать лаконичностью и уютом.</h2>
                                 <button class="info__btn btn">ЗАКАЗАТЬ ДИЗАЙН 2 </button>
+                            </div>
+
                         </div>
-                            
+                        <div class="slider__item slides">
+                            <div class="info__price">
+                                <h1 class="info__title">Дизайн интерьеров</h1>
+                                <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
+                                    будет
+                                    радовать лаконичностью и уютом.</h2>
+                                <button class="info__btn btn">ЗАКАЗАТЬ ДИЗАЙН 2 </button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="info__row">
-                    <div class="info__social social" >
+                    <div class="info__social social">
                         <div class="social__item">
                             <a href="#">
                                 <img src="img/icon_vk.png" alt="vk">
@@ -85,10 +94,8 @@
                             <a href="#"><img src="img/icon_inst.png" alt="inst"></a>
                         </div>
                     </div>
-                    <div class="info__dots">
-                        <div class="info__dots-item--active"></div>
-                        <div class="info__dots-item"></div>
-                        <div class="info__dots-item"></div>
+                    <div class="swiper-pagination">
+                        <div class="info__dots-item swiper-pagination-bullet "></div>
                     </div>
                 </div>
 
@@ -150,13 +157,16 @@
                             <a href="" class="portfolio__link">Отделочные работы</a>
                         </li>
                     </ul>
-                    <div class="portfolio__slider slider-portfolio">
-                        <div class="slider-portfolio__container">
-                            <div class="slider-portfolio__slides"><img src="img/portfolio_item_1.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides"><img src="img/portfolio_item_2.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides"><img src="img/portfolio_item_3.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides"><img src="img/portfolio_item_4.jpg" alt=""></div>
-                        </div>
+                    <div class="portfolio__slider slider-portfolio slider">
+                        <div class="slider-portfolio__container slider-container">
+                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_1.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_2.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_3.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_4.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_1.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_2.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_3.jpg" alt=""></div>
+                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_4.jpg" alt=""></div>
                     </div>
         </section>
         <section class="support">
@@ -199,7 +209,7 @@
             <div class="video__wrap">
                 <img src="./img/video_img.jpg" alt="">
                 <div class="video__content">
-                    <span class="video__text">О  студии дизайна интерьеров BRUME за 2 минуты</span>
+                    <span class="video__text">О студии дизайна интерьеров BRUME за 2 минуты</span>
                     <a href="#" class="video__btn"></a>
                 </div>
             </div>
@@ -278,7 +288,7 @@
                             <img src="./img/header_logo.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="footer__social social" >
+                    <div class="footer__social social">
                         <div class="social__item">
                             <a href="#">
                                 <img src="img/icon_vk.png" alt="vk">
@@ -296,9 +306,29 @@
                 </div>
             </div>
         </footer>
+
+
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </div>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
