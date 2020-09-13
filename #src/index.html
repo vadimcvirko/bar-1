@@ -14,20 +14,27 @@
 
 <body>
     <div class="wrapper">
+
         <section class="info">
             <header class="header">
                 <div class="container">
                     <div class="header__body">
-                        <div class="header__btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="header__column">
+                            <div class="header__btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
-                        <a href="#" class="header__logo">
-                            <img src="img/header_logo.png" alt="">
-                        </a>
-                        <div class="header__contact">
-                            <a href="tel:+78008234888" class="header__contact-link">+7 (800) 823 48 88</a>
+                        <div class="header__column">
+                            <a href="#" class="header__logo">
+                                <img src="img/header_logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="header__column">
+                            <div class="header__contact">
+                                <a href="tel:+78008234888" class="header__contact-link">+7 (800) 823 48 88</a>
+                            </div>
                         </div>
                         <nav class="header__menu menu-header">
                             <ul class="menu__list">
@@ -58,24 +65,16 @@
                 <div class="info__slider slider-info slider">
                     <div class="slider__wrapper slider-container">
                         <div class="slider__item slides">
-                            <div class="info__price">
-                                <h1 class="info__title">Дизайн интерьеров</h1>
-                                <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
-                                    будет
-                                    радовать лаконичностью и уютом.</h2>
-                                <button class="info__btn btn">ЗАКАЗАТЬ ДИЗАЙН 2 </button>
-                            </div>
-
+                            <img src="./img/slide-info.jpg" alt="" class="slider__image">
                         </div>
                         <div class="slider__item slides">
-                            <div class="info__price">
-                                <h1 class="info__title">Дизайн интерьеров</h1>
-                                <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
-                                    будет
-                                    радовать лаконичностью и уютом.</h2>
-                                <button class="info__btn btn">ЗАКАЗАТЬ ДИЗАЙН 2 </button>
-                            </div>
-
+                            <img src="./img/slide-info.jpg" alt="" class="slider__image">
+                        </div>
+                        <div class="slider__item slides">
+                            <img src="./img/slide-info.jpg" alt="" class="slider__image">
+                        </div>
+                        <div class="slider__item slides">
+                            <img src="./img/slide-info.jpg" alt="" class="slider__image">
                         </div>
                     </div>
                 </div>
@@ -99,7 +98,16 @@
                     </div>
                 </div>
 
-                <div class="info__bg"></div>
+            
+            </div>
+            <div class="info__bg">
+                <div class="info__price">
+                    <h1 class="info__title">Дизайн интерьеров</h1>
+                    <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
+                        будет
+                        радовать лаконичностью и уютом.</h2>
+                    <button class="info__btn btn">ЗАКАЗАТЬ ДИЗАЙН</button>
+                </div>
             </div>
         </section>
         <section class="features">
@@ -146,15 +154,15 @@
             <div class="container">
                 <div class="portfolio-wrap">
                     <h3 class="portfolio__title title">Портфолио</h3>
-                    <ul class="portfolio-menu">
-                        <li class="portfolio__item">
-                            <a href="" class="portfolio__link">Все проекты</a>
+                    <ul class="menu-portfolio">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Все проекты</a>
                         </li>
-                        <li class="portfolio__item">
-                            <a href="" class="portfolio__link">Дизайн интерьеров</a>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Дизайн интерьеров</a>
                         </li>
-                        <li class="portfolio__item">
-                            <a href="" class="portfolio__link">Отделочные работы</a>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Отделочные работы</a>
                         </li>
                     </ul>
                     <div class="portfolio__slider slider-portfolio slider">
@@ -279,6 +287,59 @@
             </div>
 
         </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title title">Отзывы наших клиентов</h2>
+                <div class="reviews__wrap">
+                    <div class="reviews__slider slider slider-reviews ">
+                        <div class="slider-reviews__container slider-container">
+                            <div class="slider-reviews__slides slides">
+                                <div class="slider-reviews__body">
+                                    <div class="slider-reviews__text">
+                                        <h5 class="slider-reviews__title">Александра Холодная</h5>
+                                        <div class="slider-reviews__subtitle">Услуга: инерьер детской</div>
+                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                                            В следующий раз обратимся к BRUME!</p>
+                                    </div>
+                                    <div class="slider-reviews__image">
+                                        <img src="img/reviews_img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-reviews__slides slides">
+                                <div class="slider-reviews__body">
+                                    <div class="slider-reviews__text">
+                                        <h5 class="slider-reviews__title">Александра Холодная</h5>
+                                        <div class="slider-reviews__subtitle">Услуга: инерьер детской</div>
+                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                                            В следующий раз обратимся к BRUME!</p>
+                                    </div>
+                                    <div class="slider-reviews__image">
+                                        <img src="img/reviews_img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-reviews__slides slides">
+                                <div class="slider-reviews__body">
+                                    <div class="slider-reviews__text">
+                                        <h5 class="slider-reviews__title">Александра Холодная</h5>
+                                        <div class="slider-reviews__subtitle">Услуга: инерьер детской</div>
+                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                                            В следующий раз обратимся к BRUME!</p>
+                                    </div>
+                                    <div class="slider-reviews__image">
+                                        <img src="img/reviews_img.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            <div class="info__dots-item swiper-pagination-bullet "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="footer">
             <div class="container">
                 <div class="footer__wrap">
@@ -306,27 +367,6 @@
                 </div>
             </div>
         </footer>
-
-
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
