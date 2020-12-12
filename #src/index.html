@@ -7,14 +7,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600;800&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Bar</title>
 </head>
 
 <body>
     <div class="wrapper">
-
         <section class="info">
             <header class="header">
                 <div class="container">
@@ -62,53 +60,66 @@
                 </div>
             </header>
             <div class="container">
-                <div class="info__slider slider-info slider">
-                    <div class="slider__wrapper slider-container">
-                        <div class="slider__item slides">
+                <div class="info__slider slider-info ">
+                    <div class="slider-info__container">
+                        <div class="slider-info__slides">
                             <img src="./img/slide-info.jpg" alt="" class="slider__image">
                         </div>
-                        <div class="slider__item slides">
+                        <div class="slider-info__slides">
                             <img src="./img/slide-info.jpg" alt="" class="slider__image">
                         </div>
-                        <div class="slider__item slides">
+                        <div class="slider-info__slides">
                             <img src="./img/slide-info.jpg" alt="" class="slider__image">
                         </div>
-                        <div class="slider__item slides">
+                        <div class="slider-info__slides">
                             <img src="./img/slide-info.jpg" alt="" class="slider__image">
                         </div>
+
                     </div>
+
                 </div>
                 <div class="info__row">
                     <div class="info__social social">
-                        <div class="social__item">
-                            <a href="#">
-                                <img src="img/icon_vk.png" alt="vk">
-                            </a>
-                        </div>
-                        <div class="social__item">
-                            <a href="#"><img src="img/icon_fb.png" alt="fb">
-                            </a>
-                        </div>
-                        <div class="social__item">
-                            <a href="#"><img src="img/icon_inst.png" alt="inst"></a>
-                        </div>
+                        <a class="social__item" href="#">
+                            <svg id="Bold" enable-background="new 0 0 24 24" height="15" viewBox="0 0 24 24" width="15"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg id="Bold" enable-background="new 0 0 24 24" height="15" viewBox="0 0 24 24" width="15"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z" />
+                                <path
+                                    d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z" />
+                                <circle cx="18.406" cy="5.595" r="1.439" /></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg id="regular" enable-background="new 0 0 24 24" height="15" viewBox="0 0 24 24"
+                                width="15" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m12.145 19.5c3.472 0 2.234-2.198 2.502-2.83-.004-.472-.008-.926.008-1.202.22.062.739.325 1.811 1.367 1.655 1.67 2.078 2.665 3.415 2.665h2.461c.78 0 1.186-.323 1.389-.594.196-.262.388-.722.178-1.438-.549-1.724-3.751-4.701-3.95-5.015.03-.058.078-.135.103-.175h-.002c.632-.835 3.044-4.449 3.399-5.895.001-.002.002-.005.002-.008.192-.66.016-1.088-.166-1.33-.274-.362-.71-.545-1.299-.545h-2.461c-.824 0-1.449.415-1.765 1.172-.529 1.345-2.015 4.111-3.129 5.09-.034-1.387-.011-2.446.007-3.233.036-1.535.152-3.029-1.441-3.029h-3.868c-.998 0-1.953 1.09-.919 2.384.904 1.134.325 1.766.52 4.912-.76-.815-2.112-3.016-3.068-5.829-.268-.761-.674-1.466-1.817-1.466h-2.461c-.998 0-1.594.544-1.594 1.455 0 2.046 4.529 13.544 12.145 13.544zm-8.09-13.499c.217 0 .239 0 .4.457.979 2.883 3.175 7.149 4.779 7.149 1.205 0 1.205-1.235 1.205-1.7l-.001-3.702c-.066-1.225-.512-1.835-.805-2.205l3.508.004c.002.017-.02 4.095.01 5.083 0 1.403 1.114 2.207 2.853.447 1.835-2.071 3.104-5.167 3.155-5.293.075-.18.14-.241.376-.241h2.461.01c-.001.003-.001.006-.002.009-.225 1.05-2.446 4.396-3.189 5.435-.012.016-.023.033-.034.05-.327.534-.593 1.124.045 1.954h.001c.058.07.209.234.429.462.684.706 3.03 3.12 3.238 4.08-.138.022-.288.006-2.613.011-.495 0-.882-.74-2.359-2.23-1.328-1.292-2.19-1.82-2.975-1.82-1.524 0-1.413 1.237-1.399 2.733.005 1.622-.005 1.109.006 1.211-.089.035-.344.105-1.009.105-6.345 0-10.477-10.071-10.636-11.996.055-.005.812-.002 2.546-.003z" />
+                            </svg>
+                        </a>
                     </div>
-                    <div class="swiper-pagination">
-                        <div class="info__dots-item swiper-pagination-bullet "></div>
-                    </div>
-                </div>
+                    <div class="swiper-pagination"></div>
 
-            
-            </div>
-            <div class="info__bg">
-                <div class="info__price">
-                    <h1 class="info__title">Дизайн интерьеров</h1>
-                    <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
-                        будет
-                        радовать лаконичностью и уютом.</h2>
-                    <button class="info__btn btn">ЗАКАЗАТЬ ДИЗАЙН</button>
                 </div>
-            </div>
+                <div class="info__bg">
+                    <div class="info__price">
+                        <h1 class="info__title">Дизайн интерьеров</h1>
+                        <h2 class="info__subtitle">Воплотим в жизнь интерьер, который
+                            будет
+                            радовать лаконичностью и уютом.</h2>
+                        <a href="#" class="info__btn">
+
+                            <span>ЗАКАЗАТЬ ДИЗАЙН</span>
+                            <img src="./img/arrow_btn.png" alt="arrow">
+                        </a>
+                    </div>
+                </div>
         </section>
         <section class="features">
             <div class="container">
@@ -152,9 +163,9 @@
         </section>
         <section class="portfolio">
             <div class="container">
-                <div class="portfolio-wrap">
+                <div class="portfolio__wrap">
                     <h3 class="portfolio__title title">Портфолио</h3>
-                    <ul class="menu-portfolio">
+                    <ul class="menu__portfolio">
                         <li class="menu__item">
                             <a href="" class="menu__link">Все проекты</a>
                         </li>
@@ -165,31 +176,39 @@
                             <a href="" class="menu__link">Отделочные работы</a>
                         </li>
                     </ul>
-                    <div class="portfolio__slider slider-portfolio slider">
-                        <div class="slider-portfolio__container slider-container">
-                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_1.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_2.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_3.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_4.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_1.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides"><img src="img/portfolio_item_2.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_3.jpg" alt=""></div>
-                            <div class="slider-portfolio__slides slides "><img src="img/portfolio_item_4.jpg" alt=""></div>
-                    </div>
+                    <div class="portfolio__slider slider-portfolio">
+                        <div class="slider-portfolio__container ">
+                            <div class="slider-portfolio__slides "><img src="img/portfolio_item_1.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides "><img src="img/portfolio_item_2.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides "><img src="img/portfolio_item_3.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides "><img src="img/portfolio_item_4.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides"><img src="img/portfolio_item_1.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides"><img src="img/portfolio_item_2.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides "><img src="img/portfolio_item_3.jpg" alt="">
+                            </div>
+                            <div class="slider-portfolio__slides "><img src="img/portfolio_item_4.jpg" alt="">
+                            </div>
+                        </div>
         </section>
         <section class="support">
             <div class="container">
                 <h3 class="support__title title">Наши услуги</h3>
                 <div class="support__wrap">
-                    <div class="suppott__menu">
+                    <div class="suppot__menu">
                         <ul class="support__list">
-                            <li class="support__item"><a href="" class="support__link">Дизайн жилого помещения</a></li>
-                            <li class="support__item"><a href="" class="support__link">Дизайн отельных комнат</a></li>
-                            <li class="support__item"><a href="" class="support__link">Дизайн коммерческих объектов</a>
+                            <li class="support__item"><a href="#" class="support__link">Дизайн жилого помещения</a></li>
+                            <li class="support__item"><a href="#" class="support__link">Дизайн отельных комнат</a></li>
+                            <li class="support__item"><a href="#" class="support__link">Дизайн коммерческих объектов</a>
                             </li>
-                            <li class="support__item"><a href="" class="support__link">Ремонт под ключ</a></li>
-                            <li class="support__item"><a href="" class="support__link">Отделочные работы</a></li>
-                            <li class="support__item"><a href="" class="support__link">Выезд дизайнера на дом</a></li>
+                            <li class="support__item"><a href="#" class="support__link">Ремонт под ключ</a></li>
+                            <li class="support__item"><a href="#" class="support__link">Отделочные работы</a></li>
+                            <li class="support__item"><a href="#" class="support__link">Выезд дизайнера на дом</a></li>
                         </ul>
                     </div>
                     <div class="support__content">
@@ -291,14 +310,16 @@
             <div class="container">
                 <h2 class="reviews__title title">Отзывы наших клиентов</h2>
                 <div class="reviews__wrap">
-                    <div class="reviews__slider slider slider-reviews ">
-                        <div class="slider-reviews__container slider-container">
-                            <div class="slider-reviews__slides slides">
+                    <div class="reviews__slider slider-reviews ">
+                        <div class="slider-reviews__container ">
+                            <div class="slider-reviews__slides ">
                                 <div class="slider-reviews__body">
                                     <div class="slider-reviews__text">
                                         <h5 class="slider-reviews__title">Александра Холодная</h5>
                                         <div class="slider-reviews__subtitle">Услуга: инерьер детской</div>
-                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер
+                                            для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила
+                                            все точно в срок, сделали все как мы и хотели.
                                             В следующий раз обратимся к BRUME!</p>
                                     </div>
                                     <div class="slider-reviews__image">
@@ -306,12 +327,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-reviews__slides slides">
+                            <div class="slider-reviews__slides ">
                                 <div class="slider-reviews__body">
                                     <div class="slider-reviews__text">
                                         <h5 class="slider-reviews__title">Александра Холодная</h5>
                                         <div class="slider-reviews__subtitle">Услуга: инерьер детской</div>
-                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер
+                                            для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила
+                                            все точно в срок, сделали все как мы и хотели.
                                             В следующий раз обратимся к BRUME!</p>
                                     </div>
                                     <div class="slider-reviews__image">
@@ -319,12 +342,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider-reviews__slides slides">
+                            <div class="slider-reviews__slides ">
                                 <div class="slider-reviews__body">
                                     <div class="slider-reviews__text">
                                         <h5 class="slider-reviews__title">Александра Холодная</h5>
                                         <div class="slider-reviews__subtitle">Услуга: инерьер детской</div>
-                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила все точно в срок, сделали все как  мы и хотели.
+                                        <p class="slider-reviews__description">Спасибо студии за замечательный интерьер
+                                            для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила
+                                            все точно в срок, сделали все как мы и хотели.
                                             В следующий раз обратимся к BRUME!</p>
                                     </div>
                                     <div class="slider-reviews__image">
@@ -332,9 +357,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-pagination">
-                            <div class="info__dots-item swiper-pagination-bullet "></div>
                         </div>
                     </div>
                 </div>
@@ -350,18 +372,12 @@
                         </a>
                     </div>
                     <div class="footer__social social">
-                        <div class="social__item">
-                            <a href="#">
-                                <img src="img/icon_vk.png" alt="vk">
-                            </a>
-                        </div>
-                        <div class="social__item">
-                            <a href="#"><img src="img/icon_fb.png" alt="fb">
-                            </a>
-                        </div>
-                        <div class="social__item">
-                            <a href="#"><img src="img/icon_inst.png" alt="inst"></a>
-                        </div>
+                        <a class="social__item" href="#">
+                            <img src="img/icon_vk.png" alt="vk">
+                        </a>
+                        <a class="social__item" href="#"><img src="img/icon_fb.png" alt="fb">
+                        </a>
+                        <a class="social__item" href="#"><img src="img/icon_inst.png" alt="inst"></a>
                     </div>
                     <p class="footer__copiryght">HolodnayaDesign</p>
                 </div>

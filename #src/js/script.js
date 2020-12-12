@@ -1,52 +1,25 @@
 @@include('./swiper.min.js', {});
 
-
-const swiperInfo = document.querySelector('.slider-info');
-const swiperPortfolio = document.querySelector('.slider-portfolio');
-const swiperReviews = document.querySelector('.slider-reviews ');
-
-
-
-const mySwiper = new Swiper(swiperInfo, {
-
-  slideClass: 'slider__item',
-  wrapperClass: 'slider__wrapper',
-  slidesPerView: 1,
-  // Optional parameters
+const mySwiperPortfolio = new Swiper('.slider-portfolio', {
+  wrapperClass: 'slider-portfolio__container',
+  slideClass: 'slider-portfolio__slides',
+  slidesPerView: 4,
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-})
-
-const mySwiperPortfolio = new Swiper(swiperPortfolio, {
-
-  slideClass: 'slides',
-  wrapperClass	: 'slider-container',
-  slidesPerView: 'auto',
-  spaceBetween: 0,
-
-  // If we need pagination
-
 });
-const mySwiperReviews = new Swiper(swiperReviews, {
 
-  slideClass: 'slides',
-  wrapperClass	: 'slider-container',
-  slidesPerView: '1',
-  spaceBetween: 0,
-
-  // If we need pagination
+const mySwiperReviews = new Swiper('.slider-reviews', {
+  wrapperClass: 'slider-reviews__container',
+  slideClass: 'slider-reviews__slides',
+  slidesPerView: 1,
+  loop: true,
+});
+const mySwipeInfo = new Swiper('.slider-info', {
+  wrapperClass: 'slider-info__container',
+  slideClass: 'slider-info__slides',
+  slidesPerView: 1,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-
 });
